@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeCalculator
+
+
+<h2>Letter Grade Calculator</h2>
+<p>Input your percentage in the following categories. (Do not include a percentage sign)</p>
+<form method="post">
+    <div class="listHolder">
+        <label>Assignments</label>
+        <input type="number" id="gradeAss" asp-for="Ass" />
+    </div>
+    <br />
+    <div>
+        <label>Group Projects</label>
+        <input type="number" id="gradePro" asp-for="Pro" />
+    </div>
+    <br />
+    <div>
+        <label>Quizzes</label>
+        <input type="number" id="gradeQui" asp-for="Qui" />
+    </div>
+    <br />
+    <div>
+        <label>Exams</label>
+        <input type="number" id="gradeExa" asp-for="Exa" />
+    </div>
+    <br />
+    <div>
+        <label>INTEX</label>
+        <input type="number" id="gradeInt" asp-for="INT" />
+    </div>
+    <br />
+    <input id="btnCalc" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"> </div>
+</form>
+
+

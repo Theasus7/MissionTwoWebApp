@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="img/BobSaget.jpg">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/MyStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <nav>
+        <a asp-controller="CoolBeans" asp-action="Index">Home</a>
+        <a asp-controller="CoolBeans" asp-action="gradeCalculator">Grade Calculator</a>
+    </nav>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="~/js/grades.js"></script>
+
+
+</body>
+
+
+</html>
+
+
